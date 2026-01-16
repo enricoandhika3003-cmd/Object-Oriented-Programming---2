@@ -45,18 +45,18 @@ while True:
     print("<-- {5} Exit OLMS")
     print("[--------------------------------------]")
     
-    choice = int(input("(-- Enter your choice: "))
+    choice = int(input("-- Enter your choice: "))
     
     if choice == 1:
         library.display()
     elif choice == 2:
-        book = input("(-- Enter book name to lend: ")
+        book = input("-- Enter book name to lend: ")
         library.lend(book)
     elif choice == 3:
-        book = input("(-- Enter book name to return: ")
+        book = input("-- Enter book name to return: ")
         library.returns(book)
     elif choice == 4:
-        book = input("(-- Enter book name to add: ")
+        book = input("-- Enter book name to add: ")
         library.add(book)
     elif choice == 5:
         print("\n [-- Thank you for visiting the Online Library Management System OLMS! --]")
