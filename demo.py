@@ -9,13 +9,25 @@ class Employee:
 e1 = Employee("Enrico")
 del e1
 
+class Expression:
+    def __init__(self, num1, num2, num3):
+        self.num1 = int(num1)
+        self.num2 = int(num2)
+        self.num3 = int(num3)
+    
+    def addition(self):
+        print(f"The addition of {self.num1}, {self.num2}, and {self.num3} is equal to", self.num1+self.num2+self.num3)
+
+n1 = Expression("7", "12", "23")
+n1.addition()
+
 class Library:
     def __init__(self):
         self.books = ["Python", "Javascript", "C++", "HTML", "Bootstrap", "CSS"]
     
     def display(self):
         if self.books:
-            print("\n (-- Available books in the database: ")
+            print("\n -- Available books in the database: ")
             for book in self.books:
                 print("-", book)
         else:
@@ -45,7 +57,7 @@ while True:
     print("<-- {5} Exit OLMS")
     print("[--------------------------------------]")
     
-    choice = int(input("-- Enter your choice: "))
+    choice = int(input("Enter your choice: "))
     
     if choice == 1:
         library.display()
